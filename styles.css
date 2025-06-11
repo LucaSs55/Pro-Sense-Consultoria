@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0; 
     padding: 0;
@@ -23,6 +25,7 @@ header{
     }
     .menu-item{
         text-decoration: none;
+        transition: all ease 0.5s;
         color: rgb(3, 3, 92);
     }
 }
@@ -31,9 +34,33 @@ header{
     color: gray;
 }
 
+.prosense-title{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40px;
+    .pro{
+        color: rgb(8, 130, 167);
+        position: absolute;
+        font-family: fraunces;
+        bottom: 8px;
+        font-size: 16pt;
+    }
+    
+
+    .sense{
+        position: absolute;
+        color: rgb(3, 3, 92);
+        font-family: fraunces;
+        font-size: 13pt;
+        bottom: -7px;
+        right: -30px;
+    }
+}
+
 
 .background-img{
-    background-image: url(Assets/Imagem_de_fundo_página_inicial.jpg);
+    background-image: url(Assets/consultoria\ empresarial\ curso\ de\ administracao.jpg);
     position: relative;
     background-size: cover; 
     background-repeat: no-repeat;
@@ -41,6 +68,56 @@ header{
     
 
 }
+
+.first-page-content{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    .first-content-title{
+        color: rgb(3, 3, 92);
+        font-weight: bolder;
+        font-size: 26pt;
+    }
+    .first-content{
+        text-align: center;
+        margin: 0 auto;
+        color: rgb(3, 3, 92);
+        font-size: 16pt;
+        width: 400px;
+
+    }
+    .first-page-button{
+        background-color:rgb(3, 3, 92);
+        color: white;
+        font-weight: bolder;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        padding: 10px 18px 10px 18px;
+        border-radius: 15px;
+        transition: all ease 0.5s;
+    }
+}
+
+.first-page-button:hover{
+    background-color: white ;
+    color:rgb(3, 3, 92) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsividade */
 @media(max-width:1920px){
