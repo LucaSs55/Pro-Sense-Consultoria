@@ -13,17 +13,13 @@ header{
 .menu{
     display: flex;
     align-items: center;
-    gap: 20px;
-    width: 100%;
-
+   
     .nav-icon{
         width: 60px;
     }
     .menu-items{
         display: flex;
         width: 100%;
-        gap: 12rem;
-        font-size: 14pt;
     }
     .menu-item{
         text-decoration: none;
@@ -46,8 +42,18 @@ header{
 
 }
 
-.background-img::after {
-    position: absolute;
-    inset: 0;
-    opacity: 0.7; /* escurece apenas o fundo */
+/* Responsividade */
+@media(max-width:1920px){
+    .menu{
+        gap: 30px;
+    }
+    .menu-items{
+        justify-content: space-between;
+        
+    }
+    .menu-item{
+        font-size: 16pt;
+    }
+
 }
+
