@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0; 
     padding: 0;
@@ -7,6 +10,8 @@
 }
 
 header{
+    position: fixed;
+    z-index: 5;
     width: 100%;
     padding: 0 15px 0 15px;
     background-color: white;
@@ -59,7 +64,7 @@ header{
 }
 
 
-.background-img{
+.home-background-img{
     background-image: url(Assets/consultoria\ empresarial\ curso\ de\ administracao.jpg);
     position: relative;
     background-size: cover; 
@@ -106,6 +111,81 @@ header{
     background-color: white ;
     color:rgb(3, 3, 92) ;
 }
+
+
+
+.accordion-section-container{
+    height: 100vh;
+    
+    
+}
+.accordion-section{
+    display: flex;
+    gap: 50px;
+    margin: 50px 100px;
+    width: 800px;
+}
+.accordion-section-img{
+    width: 700px;
+    
+    border-radius: 20px;
+}
+.accordion-section-title{
+    color: rgb(3, 3, 92) ;
+    font-family: fraunces;
+    width: 500px;
+    font-weight: bolder;
+    font-size: 21pt;
+    padding-bottom: 40px;
+}
+
+.accordions-items{
+    max-width: 800px;
+}
+
+.accordions-items .accordion-item{
+    position: relative;
+    width: 300px;
+    margin: 10px 0;
+}
+
+.accordions-items .accordion-item .accordion-label{
+    position: relative;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(3, 3, 92);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.accordions-items .accordion-item .accordion-label::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.accordions-items .accordion-item.active .accordion-label::before{
+    content: ("-");
+}
+
+.accordions-items .accordion-item .accordion-text-content{
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    color: white;
+    background-color: rgb(8, 130, 167);
+    transition: 0.5s;
+    height: 0;
+}
+
+.accordions-items .accordion-item.active .accordion-text-content{
+    height: 150px;
+    padding: 10px;
+}
+
+
 
 
 
