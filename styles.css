@@ -153,10 +153,17 @@ header{
     position: relative;
     cursor: pointer;
     color: white;
+    transition: all ease 0.5s;
     background-color: rgb(3, 3, 92);
     padding: 10px;
     border-radius: 10px 10px 0 0;
 }
+.accordions-items .accordion-item .accordion-label:hover{
+    background-color: gray;
+    color: rgb(3, 3, 92);
+}
+
+
 
 .accordions-items .accordion-item .accordion-label::before{
     content: "+";
@@ -167,7 +174,7 @@ header{
     font-size: 1.5em;
 }
 .accordions-items .accordion-item.active .accordion-label::before{
-    content: ("-");
+    content: "-";
 }
 
 .accordions-items .accordion-item .accordion-text-content{
@@ -184,6 +191,86 @@ header{
     height: 150px;
     padding: 10px;
 }
+
+.card-section-container{
+    height: 100vh;
+    background-color: darkblue;
+
+    .card-section-title{
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        font-size: 20pt;
+        padding-top: 15px;
+        width: 100%;
+    }
+    .card-img-top{
+        display: block;
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+        
+    }
+    .card-body{
+        background-color: white;
+        padding: 10px;
+      
+        
+    }
+    .card-text{
+        text-align: center;
+        color: rgb(3, 3, 92);
+        font-family: fraunces ;
+        font-size: 9pt;
+    }
+    .card-title{
+        text-align: center;
+        color: rgb(3, 3, 92);
+        font-size: 12pt;
+    }
+}
+
+.card-section{
+    display: flex;
+    width: 100%;
+}
+
+.cards-items{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card-box-up{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.card-box-down{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.card-item{
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #292929;
+    width: 15rem;
+    
+    
+}
+
+.card-img-top:hover{
+    opacity: 0.5;
+}
+
+
 
 
 
