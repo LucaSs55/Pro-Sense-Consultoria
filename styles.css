@@ -185,10 +185,40 @@ header{
     padding: 10px;
 }
 
+.counter-container {
+    padding: 3em 2em;
+    background: #FFFFFF;
+    color: #133f70;
+    text-align: center;
+    position: relative;
+}
 
+.counter-container > div {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em 10em;
+}
 
+.counter-container h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
 
+.counter-card {
+    background-color: #E5F1FF;
+    border: 1px solid #E5F1FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 4em 2em;
+    text-align: center;
+}
 
+.counter-card img {
+    height: 150px;
+    margin-bottom: 10px;
+}
 
 
 
