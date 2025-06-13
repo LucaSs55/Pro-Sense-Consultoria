@@ -70,8 +70,6 @@ header{
     background-size: cover; 
     background-repeat: no-repeat;
     height: 100vh;
-    
-
 }
 
 .first-page-content{
@@ -163,8 +161,6 @@ header{
     color: rgb(3, 3, 92);
 }
 
-
-
 .accordions-items .accordion-item .accordion-label::before{
     content: "+";
     position: absolute;
@@ -182,7 +178,7 @@ header{
     overflow: hidden;
     overflow-y: auto;
     color: white;
-    background-color: rgb(8, 130, 167);
+    background-color: rgb(82, 84, 85);
     transition: 0.5s;
     height: 0;
 }
@@ -191,6 +187,13 @@ header{
     height: 150px;
     padding: 10px;
 }
+
+.accordion-text-color{
+    color: rgb(3, 3, 92);
+    font-weight: bolder;
+
+}
+
 
 .card-section-container{
     height: 100vh;
@@ -208,6 +211,7 @@ header{
         display: block;
         height: auto;
         object-fit: cover;
+        transition: all ease 0.5s;
         width: 100%;
         
     }
@@ -239,7 +243,7 @@ header{
     padding-top: 2%;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
     margin: 0 auto;
     width: 100%;
 }
@@ -270,23 +274,47 @@ header{
     opacity: 0.5;
 }
 
+.counter-section{
+    height: 75vh;
+}
+.counter-container {
+    padding: 3em 2em;
+    background: #FFFFFF;
+    color: #133f70;
+    text-align: center;
+    position: relative;
+}
 
 
+.counter-container > div {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em 10em;
+}
+
+.counter-container h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+.counter-card {
+    background-color: #E5F1FF;
+    border: 1px solid #E5F1FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.counter-card img {
+    height: 150px;
+    margin-bottom: 10px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Responsividade */
+/* Responsividade-telas de até 1920px dde largura */
 @media(max-width:1920px){
     .menu{
         gap: 30px;
