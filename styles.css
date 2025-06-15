@@ -734,7 +734,7 @@ body{
     display: none;
     border: none;
     background: none;
-    border-top: 5px solid #133f70;
+    border-top: 6px solid #133f70;
     cursor: pointer;
 }
 
@@ -834,7 +834,7 @@ body{
         width: 100vw;
         height: 100vh;
         background: #438fe7;
-        clip-path: circle(100px at 90% -15%); /* adiciona e esconde o circulo para a animação */
+        clip-path: circle(100px at 90% -20%); /* adiciona e esconde o circulo para a animação */
         transition: 1s ease-out;
         font-size: 26px;
         display: flex;
