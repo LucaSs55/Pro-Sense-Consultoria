@@ -43,3 +43,16 @@ window.addEventListener("scroll", () => { /* Garante que a função so será ati
             activated = false;
         }
     });
+
+/* Menu hamburger */
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+const menuItem = document.querySelectorAll(".menu-item")
+
+hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active")});
+menuItem.forEach (link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("active");
+    })
+})
