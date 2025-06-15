@@ -300,7 +300,7 @@ body{
 /* Estilização dos cards| Mobile-version */
 
 .mobile-slider-container{
-    display: none;   /*PROBLEMA AQUIIIIIIIIIIIIIIIIIIIIIIII */
+    display: none;   
     position: relative;
     padding: 0 8px 0 8px;
 }
