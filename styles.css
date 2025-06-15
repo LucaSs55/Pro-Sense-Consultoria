@@ -227,7 +227,7 @@ body{
 
 }
 
-/* Estilização do Card */
+/* Estilização do Card| Web-version */
 
 .card-section-container{
     min-height: 100vh;
@@ -295,6 +295,87 @@ body{
 
 .card-img-top:hover{
     opacity: 0.5;
+}
+
+/* Estilização dos cards| Mobile-version */
+
+.mobile-slider-container{
+    display: none;   /*PROBLEMA AQUIIIIIIIIIIIIIIIIIIIIIIII */
+    position: relative;
+    padding: 0 8px 0 8px;
+}
+
+.slider-wrapper-mobile{
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider-mobile{
+    display: flex;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 16px;
+}
+
+.card-mobile{
+    width: 250px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    background-color: white;
+    padding:  0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
+
+.card-img-mobile{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-mobile h3 {
+    margin: 10px 12px 4px 12px;
+    font-size: 16px;
+    color: #004080;
+    font-weight: bold;
+}
+
+.card-mobile p {
+    margin: 0 12px 12px 12px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.slider-mobile-buttons{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.slider-mobile-buttons button {
+    background-color: white;
+    color: #004080;
+    border: 2px solid #004080;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    pointer-events: all; /* Permite clicar */
+    transition: all 0.3s;
+}
+
+.slider-mobile-buttons button:hover {
+    background-color: #004080;
+    color: white;
 }
 
 /* Estilização do Contador */
@@ -763,6 +844,12 @@ body{
 
 /* Responsividade-telas de até 1920px de largura */
 @media screen and (max-width:1020px) {
+    .card-section{
+        display: none;
+    }
+    .mobile-slider-container{
+        display: block;
+    }
 
     /* Formatando o título da landing page*/
     .first-page-content .first-content-title{

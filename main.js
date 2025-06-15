@@ -45,7 +45,7 @@ window.addEventListener("scroll", () => { /* Garante que a função so será ati
         }
     });
 
-// Slider
+// Slider-Web
 const track = document.querySelector('.slide-pass');
 const slides = document.querySelectorAll('.slide');
 const prev = document.querySelector('.left');
@@ -71,6 +71,41 @@ let index = 0;
     }
   });
 
+// Slider-Mobile
+
+const sliderMobile = document.querySelector('.slider-mobile');
+const mobilePrevButton = document.getElementById('mobile-prev-btn');
+const mobileNextButton = document.getElementById('mobile-next-btn');
+
+mobilePrevButton.addEventListener('click', () => {
+    sliderMobile.scrollBy({
+        left: -270,
+        behavior: 'smooth'
+    });
+});
+
+// Touchscreen e arraste do carrossel
+sliderMobile.addEventListener('touchstart', (e) => {
+    isDown = true;
+    startX = e.touches[0].pageX - sliderMobile.offsetLeft;
+    scrollLeft = sliderMobile.scrollLeft;
+});
+sliderMobile.addEventListener('touchend', () => {
+    isDown = false;
+});
+sliderMobile.addEventListener('touchmove', (e) => {
+    if(!isDown) return;
+    const x = e.touches[0].pageX - sliderMobile.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    sliderMobile.scrollLeft = scrollLeft - walk;
+});
+
+mobileNextButton.addEventListener('click', () => {
+    sliderMobile.scrollBy({
+        left: 270,
+        behavior: 'smooth'
+    });
+});
 
 // Validações de formulário e pop-up
 const form = document.getElementById("form-contact");
@@ -221,4 +256,6 @@ menuItem.forEach (link => { /* Desativa a função ao clickar em cada link */
         menu.classList.remove("active");
     })
 })
+
+
 
