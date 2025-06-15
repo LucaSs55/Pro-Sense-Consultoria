@@ -208,3 +208,17 @@ function errorInput(input, message){
   textMessage.innerText = message;
   formItem.className = "form-content error"
 }
+
+/* Menu hamburger */
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+const menuItem = document.querySelectorAll(".menu-item")
+
+hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active")});
+menuItem.forEach (link => { /* Desativa a função ao clickar em cada link */
+    link.addEventListener("click", () => {
+        menu.classList.remove("active");
+    })
+})
+

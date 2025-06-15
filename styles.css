@@ -35,12 +35,14 @@ body{
    
     .nav-icon{
         width: 50px;
+        margin-left: 30px;
     }
     .menu-items{
         display: flex;
         width: 100%;
+        list-style: none;
     }
-    .menu-item{
+    .menu-item a {
         text-decoration: none;
         transition: all ease 0.5s;
         color: rgb(3, 3, 92);
@@ -90,7 +92,7 @@ body{
     top: 50%;
     transform: translate(-50%,-50%);
 
-    .first-content-title{
+    .first-content-title {
         color: rgb(3, 3, 92);
         font-weight: bolder;
         font-style: italic;
@@ -653,21 +655,21 @@ body{
 }
 
  
-.column {
+.footer-column {
     text-align: left;  
 }
 
-.column h3 {
+.footer-column h3 {
     margin-bottom: 0.5em;
     color: #133f70;
 }
 
-.column ul {  
+.footer-column ul {  
     padding: 0;        
     margin: 0;
 }
 
-.column ul li a {
+.footer-column ul li a {
     text-decoration: none;
     color: #133f70;
 }
@@ -688,14 +690,22 @@ body{
     height: 120px;  
 }
 
+
 .nome-Prosense h1 {
     font-size: 3rem;
+}
+.footer-nome-Prosense h1 {
+    font-size: 2em;
+
     color: #438fe7;
     margin: 0;
 }
 
 .nome-Prosense h2 {
     font-size: 2em;
+}
+.footer-nome-Prosense h2 {
+    font-size: 3em;
     color: #133f70;
     margin: 0;
     position: relative;
@@ -703,7 +713,7 @@ body{
     top: -15px;
 }
 
-.frase-destaque {
+.footer-frase-destaque {
     color: #133f70;
     font-size: 1em;
     font-weight: 600;
@@ -719,23 +729,125 @@ body{
     margin-left: 0.5em;  
 }
 
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 5px solid #133f70;
+    cursor: pointer;
+}
+
+.hamburger::before, .hamburger::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #133f70;
+    margin-top: 5px ;
+    padding:1px;
+}
 
 
 
 
+/* Responsividade-telas de até 1920px de largura */
+@media screen and (max-width:1020px) {
 
-/* Responsividade-telas de até 1920px dde largura */
-@media(max-width:1920px){
-    .menu{
+    /* Formatando o título da landing page*/
+    .first-page-content .first-content-title{
+        font-size: 17pt;
+    }
+
+    /* Responsivo segunda tela*/
+    .accordion-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        margin: 30px 0;
         gap: 30px;
-    }
-    .menu-items{
-        justify-content: space-between;
-        
-    }
-    .menu-item{
-        font-size: 16pt;
+        padding: 4%;
+        padding-top: 20%;
     }
 
+    .accordion-section-img {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .accordions-items {
+        width: 90%;
+        max-width: 500px;
+    }
+    
+    .accordion-section-title,.accordions-items .accordion-item {
+        width: 100%;
+    }
+
+    .accordion-section-title {
+        text-align: center;
+        font-size: 18pt;
+        padding-bottom: 20px;
+    }
+
+    /* Responsivo do contador*/
+    .counter-container > div {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+    .counter-card {
+        text-align: center;
+    }
+    
+
+    .footer-elements {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .logo-text-container {
+        justify-content: center;
+    }
+
+    /* Menu hamburger*/
+    .hamburger {
+        display: block;
+        z-index: 1;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    .menu-items {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #438fe7;
+        clip-path: circle(100px at 90% -15%); /* adiciona e esconde o circulo para a animação */
+        transition: 1s ease-out;
+        font-size: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .menu.active .menu-items {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    
 }
 
