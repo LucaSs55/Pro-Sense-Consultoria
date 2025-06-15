@@ -46,12 +46,22 @@ body{
     }
     .menu-item{
         text-decoration: none;
-        color: #03035c ;
+        transition: all ease 0.5s;
+        color: #03035c;
     }
-    
+
+    .menu-item:hover{
+        color: gray;
+
+    }
+    .menu-item a {
+        font-size: 15pt;
+        text-decoration: none;
+        color: #03035c;
+    }
 }
 
-.menu-item:hover{
+.menu-item a:hover{
     color: gray;
 }
 
