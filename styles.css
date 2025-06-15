@@ -18,7 +18,6 @@ header{
 
 body{
     font-family: noto sans ;
-    
 }
 
 .section-title{
@@ -127,25 +126,26 @@ body{
 /* Estilização do accordion */
 
 .accordion-section-container{
-    min-height: 100vh;
-    
-    
+    min-height: 90vh;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
     
 }
 .accordion-section{
     display: flex;
-    gap: 50px;
-    margin: 50px 100px;
-    width: 800px;
+    gap: 60px;
+    margin: 250px 100px;
+    max-width: 800px;
+    max-height: 500px;
 }
 .accordion-section-img{
     width: 700px;
-    
     border-radius: 20px;
 }
 .accordion-section-title{
-    color: rgb(3, 3, 92) ;
-    width: 500px;
+    color: #03035c;
+    width: 400px;
     font-weight: bolder;
     font-size: 21pt;
     padding-bottom: 40px;
@@ -157,7 +157,7 @@ body{
 
 .accordions-items .accordion-item{
     position: relative;
-    width: 300px;
+    width: 400px;
     margin: 10px 0;
 }
 
@@ -198,10 +198,14 @@ body{
 }
 
 .accordions-items .accordion-item.active .accordion-text-content{
-    height: 150px;
+    height: 100px;
     padding: 10px;
-    font-size: 10pt;
+    font-size: 9pt;
     overflow-y: hidden;
+}
+
+#third-accordion{
+    height: 60px;
 }
 
 .accordion-text-color{
@@ -272,7 +276,7 @@ body{
     cursor: pointer;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 5px 5px 8px #292929;
+    box-shadow: 3px 3px 6px #292929;
     width: 15rem;
 }
 
@@ -283,7 +287,7 @@ body{
 /* Estilização do Contador */
 
 .counter-section{
-    min-height: 75vh;
+    min-height: 40vh;
 }
 .counter-container {
     padding: 3em 2em;
@@ -317,22 +321,21 @@ body{
 }
 
 .counter-card img {
-    height: 150px;
-    margin-bottom: 10px;
+    height: 120px;
+    margin-bottom: 15px;
 }
+
 
 /* Estilização do Slider */
 
 .slider-section-container{
-    background-color:rgb(3, 3, 92);
-    height: 100vh;
-
-    
+    background-color:#133f70;
+    height: 70vh;
 
 }
 
 .slider-section{
-    margin: 10% auto;
+    margin: 50px auto;
 }
 
 .slider-container {
@@ -421,7 +424,8 @@ body{
 }
 
 .form-section-container{
-    background-color: rgb(3, 3, 92);
+    background-color: #133f70;
+    border-top: 2px solid white;
     height: 100vh;
 }
 
@@ -450,7 +454,7 @@ body{
 .form-section-text{
     font-size: 14pt;
     padding-bottom: 15px;
-    color: rgb(10, 79, 182);
+    color: #03035c;
 }
 
 .contact-form-container{
@@ -504,7 +508,7 @@ body{
     margin-top: 10px;
     border-radius: 12px;
     transition: all ease 0.5s;
-    background-color: rgb(5, 56, 133);
+    background-color: #03035c;
     color: white;
     border:none;
     cursor: pointer;
@@ -631,6 +635,93 @@ body{
   width: 50px;
   height: 50px;
 }
+
+
+/* Footer */
+.footer-container {
+    padding: 3em 2em;
+    background-color: #FFFFFF;
+}
+
+ 
+.footer-elements {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;              
+    flex-wrap: wrap;  
+    gap: 2em;
+}
+
+ 
+.column {
+    text-align: left;  
+}
+
+.column h3 {
+    margin-bottom: 0.5em;
+    color: #133f70;
+}
+
+.column ul {  
+    padding: 0;        
+    margin: 0;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #133f70;
+}
+
+.footer-nav-icon:hover{
+    transition: all ease 0.5s;
+    color: gray;
+
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;  
+    gap: 1em;  
+}
+
+.logo-text-container img {
+    height: 120px;  
+}
+
+.nome-Prosense h1 {
+    font-size: 3rem;
+    color: #438fe7;
+    margin: 0;
+}
+
+.nome-Prosense h2 {
+    font-size: 2em;
+    color: #133f70;
+    margin: 0;
+    position: relative;
+    left: 45px;
+    top: -15px;
+}
+
+.frase-destaque {
+    color: #133f70;
+    font-size: 1em;
+    font-weight: 600;
+    position: relative;
+    left: -5px;
+    top: -20px;
+    white-space: nowrap;  
+}
+
+.social-media-icons img {
+    cursor: pointer;
+    height: 45px;  
+    margin-left: 0.5em;  
+}
+
+
+
+
 
 
 /* Responsividade-telas de até 1920px dde largura */
