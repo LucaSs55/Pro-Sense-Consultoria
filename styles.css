@@ -71,7 +71,7 @@ body{
     position: relative;
     width: 40px;
     .pro{
-        color: rgb(8, 130, 167);
+        color: #133f70;
         position: absolute;
         bottom: 8px;
         font-size: 16pt;
@@ -80,7 +80,7 @@ body{
 
     .sense{
         position: absolute;
-        color: rgb(3, 3, 92);
+        color: #438fe7;
         font-size: 13pt;
         bottom: -7px;
         right: -30px;
@@ -104,7 +104,7 @@ body{
     transform: translate(-50%,-50%);
 
     .first-content-title {
-        color: rgb(3, 3, 92);
+        color: #133f70;
         font-weight: bolder;
         font-style: italic;
         font-size: 26pt;
@@ -113,13 +113,13 @@ body{
         text-align: center;
         margin: 0 auto;
         font-style: italic;
-        color: rgb(3, 3, 92);
+        color: #133f70;
         font-size: 16pt;
         width: 400px;
 
     }
     .first-page-button{
-        background-color:rgb(3, 3, 92);
+        background-color:#133f70;
         color: white;
         font-weight: bolder;
         border: none;
@@ -133,7 +133,7 @@ body{
 
 .first-page-button:hover{
     background-color: white ;
-    color:rgb(3, 3, 92) ;
+    color:#133f70 ;
 }
 
 /* Estilização do accordion */
@@ -157,7 +157,7 @@ body{
     border-radius: 20px;
 }
 .accordion-section-title{
-    color: #03035c;
+    color: #133f70;
     width: 400px;
     font-weight: bolder;
     font-size: 21pt;
@@ -179,13 +179,13 @@ body{
     cursor: pointer;
     color: white;
     transition: all ease 0.5s;
-    background-color: rgb(3, 3, 92);
+    background-color:#133f70 ;
     padding: 10px;
     border-radius: 10px 10px 0 0;
 }
 .accordions-items .accordion-item .accordion-label:hover{
-    background-color: gray;
-    color: rgb(3, 3, 92);
+    background-color: #438fe7;
+    color: #133f70;
 }
 
 .accordions-items .accordion-item .accordion-label::before{
@@ -222,7 +222,7 @@ body{
 }
 
 .accordion-text-color{
-    color: rgb(3, 3, 92);
+    color: #438fe7;
     font-weight: bolder;
 
 }
@@ -230,8 +230,8 @@ body{
 /* Estilização do Card| Web-version */
 
 .card-section-container{
-    min-height: 100vh;
     background-color: #063472;
+    min-height: 100vh;
 
     .card-img-top{
         display: block;
@@ -249,12 +249,12 @@ body{
     }
     .card-text{
         text-align: center;
-        color: rgb(3, 3, 92);
+        color: #133f70;
         font-size: 9pt;
     }
     .card-title{
         text-align: center;
-        color: rgb(3, 3, 92);
+        color: #133f70;
         font-size: 10pt;
     }
 }
@@ -289,7 +289,7 @@ body{
     cursor: pointer;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 3px 3px 6px #292929;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     width: 15rem;
 }
 
@@ -302,7 +302,7 @@ body{
 .mobile-slider-container{
     display: none;   
     position: relative;
-    padding: 0 8px 0 8px;
+    padding: 0 10px 0 10px;  /* Checar novamente*/
 }
 
 .slider-wrapper-mobile{
@@ -382,6 +382,7 @@ body{
 
 .counter-section{
     min-height: 40vh;
+    padding: 4em 0;
 }
 .counter-container {
     padding: 3em 2em;
@@ -520,13 +521,16 @@ body{
 .form-section-container{
     background-color: #133f70;
     border-top: 2px solid white;
-    height: 100vh;
+    height: auto; 
+    overflow: visible; 
+    padding-bottom: 100px; 
 }
 
 .form-section{
     margin: 4%;
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 100px;
 }
 
 .text-img-content{
@@ -534,8 +538,8 @@ body{
 }
 
 .form-img{
-    width: 16rem;
-    height: 16rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
 }
 
@@ -548,7 +552,7 @@ body{
 .form-section-text{
     font-size: 14pt;
     padding-bottom: 15px;
-    color: #03035c;
+    color: #438fe7;
 }
 
 .contact-form-container{
@@ -825,7 +829,7 @@ body{
     display: none;
     border: none;
     background: none;
-    border-top: 5px solid #133f70;
+    border-top: 6px solid #133f70;
     cursor: pointer;
 }
 
@@ -839,17 +843,72 @@ body{
     padding:1px;
 }
 
-
-
-
-/* Responsividade-telas de até 1920px de largura */
-@media screen and (max-width:1020px) {
-    .card-section{
-        display: none;
+@media screen and (min-width:1400px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden ;
     }
-    .mobile-slider-container{
-        display: block;
+  .first-content-title {
+    font-size: 28pt;
+  }
+
+  .form-section-container,
+  .accordion-section,
+  .counter-container,
+  .footer-container {
+    padding: 0 6em;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 2em;
+  }
+
+  .contact-form-container {
+    max-width: 700px;
+  }
+  .card-section-container{
+    padding: 4em;
+    width: 100%;
+    margin: auto 0;
+    box-sizing: border-box;
+  }
+  .card-section-container .card-img-top{
+        width: 150%;
     }
+  .accordion-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  }
+
+  .accordion-section > div {
+  flex: 1;
+  }
+  .slider-section-container {
+    padding: 6rem 0;
+    background-color: #1a3a6b; 
+    text-align: center;
+  }
+
+  .slider-container {
+    max-width: 800px; 
+    width: 100%;
+    margin: 0 auto;
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 10px;
+  }
+}
+
+
+
+
+@media screen and (max-width:928px) {
+
 
     /* Formatando o título da landing page*/
     .first-page-content .first-content-title{
@@ -865,6 +924,13 @@ body{
         gap: 30px;
         padding: 4%;
         padding-top: 20%;
+    }
+    .accordion-section-container{
+        padding: 4rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
     }
 
     .accordion-section-img {
@@ -889,6 +955,22 @@ body{
         font-size: 18pt;
         padding-bottom: 20px;
     }
+    /* Seção dos cards-mobile */
+    .card-section{
+        display: none;
+    }
+    .mobile-slider-container{
+        display: block;
+    }
+
+    /* Footer*/
+    .footer-elements {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-text-container {
+        flex-direction: column;
+    }
 
     /* Responsivo do contador*/
     .counter-container > div {
@@ -899,19 +981,6 @@ body{
         text-align: center;
     }
     
-
-    .footer-elements {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .footer-column {
-        width: 100%;
-        margin: 0 auto;
-    }
     .logo-text-container {
         justify-content: center;
     }
@@ -931,9 +1000,9 @@ body{
         width: 100vw;
         height: 100vh;
         background: #438fe7;
-        clip-path: circle(100px at 90% -15%); /* adiciona e esconde o circulo para a animação */
+        clip-path: circle(100px at 90% -20%); /* adiciona e esconde o circulo para a animação */
         transition: 1s ease-out;
-        font-size: 26px;
+        font-size: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -947,5 +1016,22 @@ body{
         pointer-events: all;
     }
     
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* Responsivo formulário*/
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:30px;
+        padding: 5%;
+    }
+    .form-img {
+    width: 15rem;
+    height: 15rem;
+    }
 }
 
