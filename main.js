@@ -1,11 +1,12 @@
+// Accordions
 const accordionItem = document.getElementsByClassName("accordion-item")
-
 for( i = 0; i<accordionItem.length;i++){
     accordionItem[i].addEventListener('click', function()  {
         this.classList.toggle("active")
     })
 }
 
+// Contador
 const counters = document.querySelectorAll(".counter span");
 const container = document.querySelector(".counter-container");
 
@@ -200,156 +201,10 @@ function checkForm(){
     }
 
 }
-
+// Manipula o dom para os casos de erro
 function errorInput(input, message){
   const formItem = input.parentElement;
   const textMessage = formItem.querySelector("a")
   textMessage.innerText = message;
   formItem.className = "form-content error"
 }
-
-// Evento de envio tirar essa porra
-// form.addEventListener("submit", (event) => {
-//     event.preventDefault();
-
-//     const isFormValid =
-//         checkUsername() &&
-//         checkEnterpriseName() &&
-//         checkPhoneNumber() &&
-//         checkEmail();
-
-//     if (isFormValid) {
-//         openPopup();
-//         form.reset();
-//         clearAllSuccess();
-//     }
-// });
-
-// // Funções de validação
-// function checkUsername() {
-//     const usernameValue = username.value.trim();
-//     const regexName = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
-//     if (usernameValue === "") {
-//         errorInput(username, "*Este campo é obrigatório");
-//         return false;
-
-//     } else if (!regexName.test(usernameValue)) {
-//         errorInput(username, "*Números e caracteres especiais não são permitidos");
-//         return false;
-
-//     } else {
-//         successInput(username);
-//         return true;
-//     }
-// }
-
-// function checkEnterpriseName() {
-//     const enterpriseValue = enterprise.value.trim();
-
-//     if (enterpriseValue === "") {
-//         errorInput(enterprise, "*Este campo é obrigatório");
-//         return false;
-
-//     } else {
-//         successInput(enterprise);
-//         return true;
-//     }
-// }
-
-// function checkPhoneNumber() {
-//     const phoneValue = phone.value.trim();
-//     const regexPhone = /^\(\d{2}\)\s9\d{4}-\d{4}$/;
-//     if (phoneValue === "") {
-//         errorInput(phone, "*Este campo é obrigatório");
-//         return false;
-//     } else if (!regexPhone.test(phoneValue)) {
-//         errorInput(phone, "*Formato inválido. Ex: (11) 91234-5678");
-//         return false;
-//     } else {
-//         successInput(phone);
-//         return true;
-//     }
-// }
-
-// function formatPhoneNumber(value) {
-//     value = value.replace(/\D/g, "");
-
-//     if (value.length <= 2) {
-//         return `(${value}`;
-//     } else if (value.length <= 6) {
-//         return `(${value.slice(0, 2)}) ${value.slice(2)}`;
-//     } else if (value.length <= 10) {
-//         return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
-//     } else {
-//         return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
-//     }
-// }
-
-
-
-// function checkEmail() {
-//     const emailValue = email.value.trim();
-//     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     if (value === "") {
-//         errorInput(email, "*Este campo é obrigatório");
-//         return false;
-//     } else if (!regexEmail.test(emailValue)) {
-//         errorInput(email, "*Email inválido");
-//         return false;
-//     } else {
-//         successInput(email);
-//         return true;
-//     }
-// }
-
-// // Funções de erro e sucesso
-// function errorInput(input, message) {
-//     const formItem = input.parentElement;
-//     const a = formItem.querySelector("a");
-//     a.innerText = message;
-//     formItem.classList.add("error");
-// }
-
-// function successInput(input) {
-//     const formItem = input.parentElement;
-//     const a = formItem.querySelector("a");
-//     a.innerText = "";
-//     formItem.classList.remove("error");
-// }
-
-// function clearAllSuccess() {
-//     [username, enterprise, phone, email].forEach((input) => {
-//         const formItem = input.parentElement;
-//         formItem.classList.remove("error");
-//     });
-// }
-
-// // 🟩 Popup
-// function openPopup() {
-//      const popup = document.getElementById("popup");
-//      popup.classList.remove("hidden");
-// // }
-
-// function closePopup() {
-//     const popup = document.getElementById("popup");
-//     popup.classList.add("hidden");
-// }
-
-// // 🟦 Formatação do número de celular em tempo real
-// phone.addEventListener("input", (e) => {
-//     e.target.value = formatPhoneNumber(e.target.value);
-// });
-
-//  function formatPhoneNumber(value) {
-//      value = value.replace(/\D/g, "");
-
-//      if (value.length <= 2) {
-//         return `(${value}`;
-//     } else if (value.length <= 6) {
-//          return `(${value.slice(0, 2)}) ${value.slice(2)}`;
-//     } else if (value.length <= 10) {
-//         return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
-//     } else {
-//         return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
-//     }
-//  }
