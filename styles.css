@@ -92,7 +92,7 @@ body{
 
 
 .home-background-img{
-    background-image: url(Assets/consultoria\ empresarial\ curso\ de\ administracao.jpg);
+    background-image: url(Assets/imagem_clareada.png);
     position: relative;
     background-size: cover; 
     background-repeat: no-repeat;
@@ -142,7 +142,7 @@ body{
 /* Estilização do accordion */
 
 .accordion-section-container{
-    min-height: 100vh;
+    min-height: 95vh;
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px 2rem;
@@ -154,18 +154,20 @@ body{
 .accordion-section{
     display: flex;
     margin: auto;
-    gap: 60px;
+    gap: 20px;
     margin: 20px 430px 20px 100px;
     max-width: 800px;
     max-height: 500px;
+    
 }
 .accordion-section-img{
-    width: 700px;
+    width: 600px;
     border-radius: 20px;
 }
 .accordion-section-title{
     color: #133f70;
     width: 400px;
+    padding-bottom: 45px;
     font-weight: bolder;
     font-size: 21pt;
     
