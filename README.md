@@ -1,5 +1,5 @@
 # Pro Sense-Consultoria
-![Preview](Assets/screenshot.png)
+![Preview](Assets/logo-pro_sense.png)
 ## 📘 Descrição
 O Pro-Sense-Consultoria consiste em uma landing page responsiva, moderna e funcional, desenvolvida com HTML, CSS e JavaScript puro, com foco em consultoria empresarial estratégica, inovação e performance empresarial.
 
