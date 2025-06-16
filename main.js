@@ -123,18 +123,27 @@ closePopup.addEventListener("click", () => {
 })
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault();
+    event.preventDefault();
 
-  checkForm();
+    checkForm();
+})
+
+enterprise.addEventListener("blur", () => {
+    checkEnterprise()
 })
 
 email.addEventListener("blur", () => {
-  checkEmail();
+    checkEmail();
+})
+
+phone.addEventListener("blur",() => {
+    checkPhoneNumber()
+
 })
 
 
 username.addEventListener("blur", () => {
-  checkUsername();
+    checkUsername();
 })
 
 
@@ -180,7 +189,7 @@ function checkPhoneNumber(){
         return false;
 
     }else{
-        const formItem = enterprise.parentElement;
+        const formItem = phone.parentElement;
         formItem.className = "form-content"
   }
 
@@ -214,7 +223,7 @@ function checkEmail(){
         errorInput(email, "*Use um domínio válido; (ex:@gmail.com)");
         return false;
     }else{
-        const formItem = enterprise.parentElement;
+        const formItem = email.parentElement;
         formItem.className = "form-content"
     }
 
