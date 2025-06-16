@@ -3,49 +3,86 @@
 ## 📘 Descrição
 O Pro-Sense-Consultoria é um conjunto de ferramentas e utilitários desenvolvido para apoiar empresas e consultores em suas atividades de planejamento financeiro, gestão de dados e geração de relatórios customizados.
 
-## 🚀 Funcionalidades
-- Geração de relatórios automáticos com base em dados financeiros.
-- Módulos prontos para indicadores de performance (KPIs).
-- Dashboards simples para análise visual de resultados.
-- Ferramentas para importação/exportação de dados em formatos compatíveis (CSV/Excel).
+Um conjunto de ferramentas e utilitários para análise financeira, geração de relatórios e indicadores de desempenho para consultorias e empresas.
 
-## 📂 Estrutura do Repositório
-/config/         # Arquivos de configuração (ex.: settings.ini)
-/data/           # Exemplos de dados de entrada
-/src/            # Código-fonte principal
-/tests/          # Casos de teste e validação automática
-/docs/           # Documentação adicional e guias de uso
-README.md        # Este arquivo
+## 🚀 Começando
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-## ⚙️ Requisitos
-- Python >= 3.8
+Consulte a seção **📦 Implantação** para saber como implantar o projeto.
+
+## 📋 Pré-requisitos
+Você vai precisar de:
+
+- Python 3.8 ou superior
 - Pip
-- Bibliotecas utilizadas:
-  - pandas
-  - openpyxl
-  - matplotlib
-  - pytest
+- Git
 
-Para instalar dependências:
+Instale as dependências com:
+```bash
 pip install -r requirements.txt
+```
 
-## 🎬 Exemplos de uso
-1. Adicione os dados em data/financas.csv.
-2. Execute o script principal:
-   python src/main.py --input data/financas.csv --output relatorio.pdf
-3. Os KPIs serão impressos no console e o PDF do relatório será gerado em output/.
+## 🔧 Instalação
 
-## 🔧 Como contribuir
-1. Faça um fork do projeto.
-2. Crie uma branch:
-   git checkout -b minha-feature
-3. Faça suas alterações e adicione os testes correspondentes.
-4. Submeta um pull request com descrição clara das mudanças.
+Clone o repositório:
+```bash
+git clone https://github.com/LucaSs55/Pro-Sense-Consultoria.git
+cd Pro-Sense-Consultoria
+```
 
-## 🧪 Testes automatizados
-Para rodar os testes:
+Instale os pacotes:
+```bash
+pip install -r requirements.txt
+```
+
+Execute o sistema com um arquivo de entrada:
+```bash
+python src/main.py --input data/financas.csv --output relatorio.pdf
+```
+
+Esse comando vai gerar um relatório com indicadores e salvar no diretório `output/`.
+
+## ⚙️ Executando os testes
+Para rodar os testes automatizados, execute:
+
+```bash
 pytest
+```
+
+## 🔩 Analise os testes de ponta a ponta
+Os testes validam as principais funcionalidades como leitura de dados, geração de relatórios e cálculo dos KPIs, garantindo que erros sejam identificados automaticamente.
+
+Exemplo:
+```bash
+pytest tests/test_kpis.py
+```
+
+## ⌨️ E testes de estilo de codificação
+Verifique o estilo do código com:
+
+```bash
+flake8 src/
+```
+
+Esses testes garantem que o código siga padrões de estilo e boas práticas.
+
+## 📦 Implantação
+Para implantar em produção, configure o ambiente com variáveis adequadas, certifique-se de que os dados estejam corretos e execute o script principal. Você pode agendar execuções automáticas com um cron job, por exemplo.
+
+## 🛠️ Construído com
+- Python - Linguagem principal
+- Pandas - Manipulação de dados
+- Matplotlib - Geração de gráficos
+- PyTest - Framework de testes
+- Flake8 - Validação de estilo
+
+## 🖇️ Colaborando
+Por favor, leia o arquivo `COLABORACAO.md` para detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de pull request.
+
+## 📌 Versão
+Usamos [SemVer](https://semver.org/lang/pt-BR/) para controle de versão. Veja as [tags no repositório](https://github.com/LucaSs55/Pro-Sense-Consultoria/tags) para versões disponíveis.
+
+Veja também a lista de [colaboradores](https://github.com/LucaSs55/Pro-Sense-Consultoria/graphs/contributors) que participaram deste projeto.
 
 ## 📄 Licença
-Este projeto está licenciado sob a MIT License. Consulte o arquivo LICENSE para mais detalhes.
-
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
