@@ -1,83 +1,81 @@
 # Pro Sense-Consultoria
 
 ## 📘 Descrição
-O Pro-Sense-Consultoria é um conjunto de ferramentas e utilitários desenvolvido para apoiar empresas e consultores em suas atividades de planejamento financeiro, gestão de dados e geração de relatórios customizados.
+O Pro-Sense-Consultoria consiste em uma landing page responsiva, moderna e funcional, desenvolvida com HTML, CSS e JavaScript puro, com foco em consultoria empresarial estratégica, inovação e performance empresarial.
 
-Um conjunto de ferramentas e utilitários para análise financeira, geração de relatórios e indicadores de desempenho para consultorias e empresas.
+Um conjunto de ferramentas e utilitários para análise financeira, geração de relatórios e indicadores de desempenho para consultorias e empresas. Adaptado para **mobile, tablet e desktop**, usando `media queries` e lógica condicional em JS para sliders e navegação.
 
 ## 🚀 Começando
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
 Consulte a seção **📦 Implantação** para saber como implantar o projeto.
 
+## Estrutura
+
+├── index.html # Página principal com conteúdo e estrutura
+├── styles.css # Estilos visuais e responsividade
+├── main.js # Interatividade e validações
+└── Assets/ # Imagens e ícones utilizados
+
+## ✨ Funcionalidades
+
+- ✅ Seções: Home, Sobre, Serviços, Cases, Formulário, Footer
+- ✅ Menu responsivo com botão "hamburger"
+- ✅ Cards e sliders responsivos (web/mobile)
+- ✅ Accordion informativo
+- ✅ Animação de contador ao rolar
+- ✅ Validação de formulário e feedback visual
+- ✅ Pop-up de sucesso ao enviar
+
 ## 📋 Pré-requisitos
 Você vai precisar de:
 
-- Python 3.8 ou superior
-- Pip
-- Git
+- JavaScript
+- HTML5
+- CSS3
 
 Instale as dependências com:
 ```bash
 pip install -r requirements.txt
 ```
 
-## 🔧 Instalação
 
-Clone o repositório:
-```bash
-git clone https://github.com/LucaSs55/Pro-Sense-Consultoria.git
-cd Pro-Sense-Consultoria
-```
+## 🚀 Como usar
 
-Instale os pacotes:
-```bash
-pip install -r requirements.txt
-```
+1. Clone o repositório ou baixe os arquivos.
+2. Abra o `index.html` em qualquer navegador moderno.
+3. Navegue, interaja e teste a responsividade e formulário.
 
-Execute o sistema com um arquivo de entrada:
-```bash
-python src/main.py --input data/financas.csv --output relatorio.pdf
-```
+## 🧪 Validações do Formulário
 
-Esse comando vai gerar um relatório com indicadores e salvar no diretório `output/`.
-
-## ⚙️ Executando os testes
-Para rodar os testes automatizados, execute:
-
-```bash
-pytest
-```
-
-## 🔩 Analise os testes de ponta a ponta
-Os testes validam as principais funcionalidades como leitura de dados, geração de relatórios e cálculo dos KPIs, garantindo que erros sejam identificados automaticamente.
-
-Exemplo:
-```bash
-pytest tests/test_kpis.py
-```
-
-## ⌨️ E testes de estilo de codificação
-Verifique o estilo do código com:
-
-```bash
-flake8 src/
-```
-
-Esses testes garantem que o código siga padrões de estilo e boas práticas.
+- Nome: somente letras (acentos permitidos)
+- Empresa: não vazio
+- Telefone: formato `(11) 91234-5678`
+- Email: domínio válido
+- Feedback visual com mensagens de erro e bordas coloridas
 
 ## 📦 Implantação
 Para implantar em produção, configure o ambiente com variáveis adequadas, certifique-se de que os dados estejam corretos e execute o script principal. Você pode agendar execuções automáticas com um cron job, por exemplo.
 
-## 🛠️ Construído com
-- Python - Linguagem principal
-- Pandas - Manipulação de dados
-- Matplotlib - Geração de gráficos
-- PyTest - Framework de testes
-- Flake8 - Validação de estilo
+## 🛠️ Construído com:
 
-## 🖇️ Colaborando
-Por favor, leia o arquivo `COLABORACAO.md` para detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de pull request.
+- **HTML5** – Estrutura base do site e organização do conteúdo
+- **CSS3** – Estilização, layout responsivo, animações e design visual
+- **JavaScript (Vanilla)** – Interações como sliders, accordion, contadores, validação de formulário e menu mobile
+- **Google Fonts** – Fontes personalizadas via CDN (como Noto Sans, Kanit, Montserrat, etc.)
+- **DOM API** – Manipulação direta dos elementos HTML via JavaScript
+- **Regex (Expressões Regulares)** – Validação de dados como email, telefone e nome
+- **Media Queries** – Responsividade para dispositivos móveis e telas grandes
+- **Flexbox & CSS Grid** – Layouts flexíveis e organizados para as seções
+- **Clip-path (CSS)** – Animação circular do menu hamburger no mobile
+- **CSS Transitions & Hover Effects** – Efeitos suaves de interação visual
+
+## 🖇️ Colaboradores
+**Nicolas Matheus Gonzaga Monteiro**: Scrum Master e desenvolvimento
+**Lucas Santos do Nascimento**: Desenvolvimento
+**Angelo Konane Nunes**: Design 
+**Maria Clarissa Gusmão**: Design
+**Maria Eduarda Rocha Leal**: Documentação
 
 Veja também a lista de [colaboradores](https://github.com/LucaSs55/Pro-Sense-Consultoria/graphs/contributors) que participaram deste projeto.
 
