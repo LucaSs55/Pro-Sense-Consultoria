@@ -13,8 +13,11 @@ Consulte a seção **📦 Implantação** para saber como implantar o projeto.
 ## Estrutura
 
 ├── index.html # Página principal com conteúdo e estrutura
+
 ├── styles.css # Estilos visuais e responsividade
+
 ├── main.js # Interatividade e validações
+
 └── Assets/ # Imagens e ícones utilizados
 
 ## ✨ Funcionalidades
@@ -33,12 +36,6 @@ Você vai precisar de:
 - JavaScript
 - HTML5
 - CSS3
-
-Instale as dependências com:
-```bash
-pip install -r requirements.txt
-```
-
 
 ## 🚀 Como usar
 
@@ -72,9 +69,13 @@ Para implantar em produção, configure o ambiente com variáveis adequadas, cer
 
 ## 🖇️ Colaboradores
 **Nicolas Matheus Gonzaga Monteiro**: Scrum Master e desenvolvimento
+
 **Lucas Santos do Nascimento**: Desenvolvimento
+
 **Angelo Konane Nunes**: Design 
+
 **Maria Clarissa Gusmão**: Design
+
 **Maria Eduarda Rocha Leal**: Documentação
 
 Veja também a lista de [colaboradores](https://github.com/LucaSs55/Pro-Sense-Consultoria/graphs/contributors) que participaram deste projeto.
