@@ -139,16 +139,20 @@ body{
 /* Estilização do accordion */
 
 .accordion-section-container{
-    min-height: 90vh;
-    max-height: 100vh;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    
+    gap: 10px;
 }
 .accordion-section{
     display: flex;
+    margin: auto;
     gap: 60px;
-    margin: 250px 100px;
+    margin: 20px 430px 20px 100px;
     max-width: 800px;
     max-height: 500px;
 }
@@ -161,7 +165,7 @@ body{
     width: 400px;
     font-weight: bolder;
     font-size: 21pt;
-    padding-bottom: 40px;
+    
 }
 
 .accordions-items{
@@ -230,7 +234,7 @@ body{
 /* Estilização do Card| Web-version */
 
 .card-section-container{
-    background-color: #063472;
+    background-color: #133f70 ;
     min-height: 100vh;
 
     .card-img-top{
@@ -843,6 +847,11 @@ body{
     padding:1px;
 }
 
+
+
+
+
+/* Telas grandes */
 @media screen and (min-width:1400px) {
     html, body {
         margin: 0;
@@ -862,6 +871,7 @@ body{
     margin: 0 auto;
     padding: 0 2em;
   }
+
 
   .contact-form-container {
     max-width: 700px;
@@ -921,12 +931,19 @@ body{
         align-items: center;
         width: 100%;
         margin: 30px 0;
-        gap: 30px;
+        gap: 80px;
         padding: 4%;
         padding-top: 20%;
     }
+    
+    .accordions-items .accordion-item.active .accordion-text-content{
+    height: 100px;
+    padding: 10px;
+    font-size: 7pt;
+    overflow-y: hidden;
+}
     .accordion-section-container{
-        padding: 4rem 0;
+        padding: 1rem 2.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -953,9 +970,10 @@ body{
     .accordion-section-title {
         text-align: center;
         font-size: 18pt;
-        padding-bottom: 20px;
+        padding-bottom: 80px;
     }
     /* Seção dos cards-mobile */
+    
     .card-section{
         display: none;
     }
