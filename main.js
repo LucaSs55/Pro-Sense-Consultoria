@@ -159,7 +159,7 @@ function checkEnterprise(){
   const enterpriseValue = enterprise.value;
 
   if(enterpriseValue === ""){
-    errorInput(enterprise, "*Campo obrigatório")
+    errorInput(enterprise, "*Campo de preenchimento obrigatório")
 
   }else{
     const formItem = enterprise.parentElement;
@@ -172,7 +172,7 @@ function checkPhoneNumber(){
     const phoneValue = phone.value.trim();
     const regexPhone = /^\(\d{2}\)\s9\d{4}-\d{4}$/;
     if (phoneValue === "") {
-        errorInput(phone, "*Este campo é obrigatório");
+        errorInput(phone, "*Campo de preenchimento obrigatório");
         return false;
    
     }else if (!regexPhone.test(phoneValue)) {
@@ -208,10 +208,10 @@ function checkEmail(){
     const emailValue = email.value.trim();
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailValue === "") {
-        errorInput(email, "*Este campo é obrigatório");
+        errorInput(email, "*Campo de preenchimento obrigatório");
         return false;
     } else if (!regexEmail.test(emailValue)) {
-        errorInput(email, "*Use um domínio válido; ex:@gmail.com");
+        errorInput(email, "*Use um domínio válido; (ex:@gmail.com)");
         return false;
     }else{
         const formItem = enterprise.parentElement;

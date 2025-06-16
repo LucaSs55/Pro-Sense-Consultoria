@@ -342,6 +342,7 @@ body{
 }
 
 .card-mobile h3 {
+    text-align: center;
     margin: 10px 12px 4px 12px;
     font-size: 16px;
     color: #004080;
@@ -351,8 +352,8 @@ body{
 .card-mobile p {
     margin: 0 12px 12px 12px;
     text-align: center;
-    font-size: 14px;
-    color: #333;
+    font-size: 12px;
+    color: #004080;
 }
 
 .slider-mobile-buttons{
@@ -973,6 +974,14 @@ body{
         padding-bottom: 80px;
     }
     /* Seção dos cards-mobile */
+    .card-section-container{
+        min-height: 55vh;
+    }
+
+    .card-img-mobile:hover{
+        opacity: 0.5;
+    }
+    
     
     .card-section{
         display: none;
