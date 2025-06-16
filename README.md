@@ -79,9 +79,6 @@ Para implantar em produção, configure o ambiente com variáveis adequadas, cer
 ## 🖇️ Colaborando
 Por favor, leia o arquivo `COLABORACAO.md` para detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de pull request.
 
-## 📌 Versão
-Usamos [SemVer](https://semver.org/lang/pt-BR/) para controle de versão. Veja as [tags no repositório](https://github.com/LucaSs55/Pro-Sense-Consultoria/tags) para versões disponíveis.
-
 Veja também a lista de [colaboradores](https://github.com/LucaSs55/Pro-Sense-Consultoria/graphs/contributors) que participaram deste projeto.
 
 ## 📄 Licença
